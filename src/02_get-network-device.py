@@ -1,8 +1,27 @@
 import json
 import requests
+
+#api_url_login = "http://localhost:58000/api/v1/ticket"
+
+#headers_login = {
+#    "content-type": "application/json"
+#}
+
+
+#body_json = {
+#    "username": "cisco",
+#    "password": "class"
+#}
+
+#resp = requests.post(api_url_login, json.dumps(body_json_login), headers=headers_login)
+
+#response_json_login = resp.json()
+
 api_url = "http://localhost:58000/api/v1/network-device"
 
-headers={"X-Auth-Token": "NC-144-d131174a867340c3a5a8-nbi"}
+#headers={"X-Auth-Token": response_json["response"]["serviceTicket"]}
+
+headers={"X-Auth-Token": "NC-5-21dab29d0df44e19a3e2-nbi"}
 
 resp = requests.get(api_url, headers=headers)
 
